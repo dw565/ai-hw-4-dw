@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+openai
+pydantic-ai-slim[openai]==2.49.0
+python-dotenv
+playwright  # tests/app_check.py only

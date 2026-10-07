@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local data pack (database + product images) — never committed
+data/
+*.db
+*.db-journal
+*.sqlite
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node / build output
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Audit-trail write helpers (the log itself, output/audit_trail.json, IS committed)
+output/audit_trail.lock
+output/*.json.tmp
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.log
