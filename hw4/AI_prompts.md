@@ -285,7 +285,12 @@ was rewritten to compare against a snapshot taken before the test; and
   set up git as needed, connect to the repo above, commit the submission, and push it. if there's already a git repo or remote, check it first so we dont mess up existing work lol. dont force push.
 
   if you need me to log into GitHub, walk me thru that step. otherwise go ahead and finish, verify the files made it up and the repo is public, and give me the final repo URL to submit on Canvas. flag anything missing rather than making it up pls!!”
+- “ok i think it pushed?” (after signing in to GitHub with a personal access token in the terminal)
 
 ### What didn’t work
 
-Nothing needed revision.
+The first push failed because git had no saved GitHub login; it worked after
+signing in with a fine-grained personal access token. The secret scan flagged
+two test fixtures (a fake `sk-` key string and a seed customer's email in
+`tests/safety_check.py`), which were replaced with obviously fictional values
+before committing.
